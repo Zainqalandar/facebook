@@ -128,6 +128,13 @@ footer a:hover {
         margin: 0 auto
     }
 }
+@media (max-width: 428px) { 
+    #create-btn, #login-btn {
+        padding: 16px 5px;
+   
+    }
+    
+}
 
 /* Small devices (landscape phones, less than 768px) */
 /* @media (max-width: 767.98px) {  */
