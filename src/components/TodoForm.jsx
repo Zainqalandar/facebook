@@ -20,7 +20,7 @@ const TodoForm = ({ onSubmit }) => {
     e.preventDefault();
     
     try {
-      const response = await axios.post('http://localhost:3002/api/crud/todo', {title, description})
+      const response = await axios.post('https://facebook-eight-ivory.vercel.app/api/crud/todo', {title, description})
       setTitle('');
       setDescription('');
       notify('Todo created successfully')

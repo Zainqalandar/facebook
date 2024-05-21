@@ -12,7 +12,7 @@ const TodoList = () => {
   //  Get todos from mongoose db
   const getTodos = async () => {
     try {
-       const todos = await axios.get('http://localhost:3002///api/crud/todos')
+       const todos = await axios.get('https://facebook-eight-ivory.vercel.app/api/crud/todos')
 
       setTodos(todos.data.todos)
       
@@ -25,7 +25,7 @@ const TodoList = () => {
   const deleteTodo = async (id) => {
     console.log('id', id)
     try {
-      await axios.post(`http://localhost:3001/api/crud/deletetodo`, {id});
+      await axios.post(`https://facebook-eight-ivory.vercel.app/api/crud/deletetodo`, {id});
       setIsUpdated(prev => prev + 1)
     } catch (error) {
       console.log("error", error)
@@ -34,7 +34,7 @@ const TodoList = () => {
 
   const updateTodo = async (id) => {
     try {
-      const todo = await axios.post(`http://localhost:3001/api/crud/gettodo`, {id});
+      const todo = await axios.post(`https://facebook-eight-ivory.vercel.app/api/crud/gettodo`, {id});
       setTodo(todo.data.existTodo)
     } catch (error) {
       console.log("error", error)
