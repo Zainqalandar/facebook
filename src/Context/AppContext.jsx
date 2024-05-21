@@ -1,5 +1,5 @@
 'use client'
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 const AppContext = createContext();
 export const AppProvider = ({ children }) => {
@@ -9,7 +9,7 @@ export const AppProvider = ({ children }) => {
 
 
   return (
-    <AppContext.Provider value={{ setItems, deleteItem, isupdated, setIsUpdated, setTodo, todo}} >
+    <AppContext.Provider value={{isupdated, setIsUpdated, setTodo, todo}} >
       {children}
     </AppContext.Provider>
   );
