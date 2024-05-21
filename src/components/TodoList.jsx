@@ -12,7 +12,7 @@ const TodoList = () => {
   //  Get todos from mongoose db
   const getTodos = async () => {
     try {
-       const todos = await axios.get('http://localhost:3001/api/crud/todos')
+       const todos = await axios.get('https://facebook-1pn3-git-master-syed-zain-qalandars-projects.vercel.app//api/crud/todos')
 
       setTodos(todos.data.todos)
       
