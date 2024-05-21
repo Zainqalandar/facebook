@@ -13,6 +13,7 @@
     "axios": "^1.7.1",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.5",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.3.3",
     "next": "^14.3.0-canary.22",
